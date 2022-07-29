@@ -26,50 +26,52 @@
     <form id="form" onsubmit="myFunction(event)">
  
         <!-- Details -->
-        <div class="form-control">
-            <label for="name" id="label-name">
-                Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
-        </div>
+        <p>Select one option from either of the three categories below and click 'submit' to be matched with available dogs.</p>
   
-  
+        <br>
+        <br>
+
         <div class="form-control">
             <label for="persona" id="label-persona">
+                <p id="text-form">Choose a dog according to your personality</p>
                 What would describe you best?
             </label>
              
             <!-- Dropdown options -->
             <select name="persona" id="persona">
+                <option value=""></option>
                 <option value="introvert">Introvert</option>
                 <option value="extrovert">Extrovert</option>
                 <option value="bitofboth">A bit of both</option>
             </select>
         </div>
   
+        
+
         <div class="form-control">
             <label>
+                <p>Choose a dog according to their size</p>
                 What size of dog are you after?
             </label>
  
             <select name="sizeofdog" id="sizeofdog">
+                <option value=""></option>
                 <option value="small">Small-sized doggo</option>
                 <option value="medium">Medium-sized doggo</option>
                 <option value="big">Big-sized doggo</option>
-                <option value="indifferent">Indifferent - any kind of doggo</option>
             </select>
         </div>
 
         <div class="form-control">
             <label>
+                <p>Choose a dog according to your activity habits</p>
                 How active are you?
             </label>
  
+            
+
             <select name="activity" id="activity">
+                <option value=""></option>
                 <option value="couchpotato">Couch potato style of human</option>
                 <option value="gym">Gym afficionado</option>
                 <option value="regular">Regular type of human that goes of a walk</option>
@@ -87,111 +89,207 @@
 </br>
 </br>
 </br>
-                <div id="wrap">
-                <div class="product_grid column_1">
-                    <div class="product_img">
+        <div id="wrap">
+                <div class="product_grid column_2" id="broccolidog" data-personality="bitofboth" data-size="medium" data-activity="regular">
+                    <div class="product_img_1">
                     </div>
                     <div class="product_details">
-                        <h1 class="title editable">Dog 1</h1>
+                        <h1 class="title editable">Broccoli Dog</h1>
                         
                   <span class="product_desc editable">
-                  <p>This will be the featured dog.</p>
+                  <p>A doggo that doesn't want to eat his broccoli. Reason? Too green.</p>
                   </span>
                   <div class="action">
-                 <a class="button" href="#">View doggo file</a>
+                 <!-- <a class="button" href="#">View doggo file</a> -->
                  <a class="button" href="#">Adopt</a>
                 </div>
                     </div>
                 </div>
-                <div class="product_grid column_2">
+
+                <div class="product_grid column_2" id="cupcakedog" data-personality="introvert" data-size="medium" data-activity="gym">
                     <div class="product_img_2">
                     </div>
                     <div class="product_details">
-                        <h1 class="title editable">Dog 2</h1>
+                        <h1 class="title editable">Cupcake Dog</h1>
                         
                   <span class="product_desc editable">
-                  <p>Number1</p>
+                  <p>A doggo that cannot believe how these delicious cupcakes might be reachable. Is this a trap?</p>
                   </span>
                   <div class="action">
-                 <a class="button" href="#">View doggo file</a>
+                 <!-- <a class="button" href="#">View doggo file</a> -->
                  <a class="button" href="#">Adopt</a>
                 </div>
                     </div>
                 </div>
-                <div class="product_grid column_2">
+
+                <div class="product_grid column_2" id="doge" data-personality="extrovert" data-size="medium" data-activity="couchpotato">
                     <div class="product_img_3">
                     </div>
                     <div class="product_details">
-                        <h1 class="title editable">Dog 3</h1>
+                        <h1 class="title editable">Doge</h1>
                         
                   <span class="product_desc editable">
-                  <p>Number2
+                  <p>If you don't know him yet... Wow. Much ignorance. Very unfortunate. So rude. !!! </p>
+                  </span>
+                  <div class="action">
+                 <!-- <a class="button" href="#">View doggo file</a> -->
+                 <a class="button" href="#">Adopt</a>
+                </div>
+                    </div>
+                </div>
                 
-                  </p>
+                <div class="product_grid column_2" id="moonmoon" data-personality="extrovert" data-size="medium" data-activity="gym">
+                    <div class="product_img_4">
+                    </div>
+                    <div class="product_details">
+                        <h1 class="title editable">Moon Moon</h1>
+                        
+                  <span class="product_desc editable">
+                  <p>Moon Moon is... Well. He is the kind of dog that just sees things where others don't. One thing he does like for sure: dancing.</p>
                   </span>
                   <div class="action">
-                 <a class="button" href="#">View doggo file</a>
+                 <!-- <a class="button" href="#">View doggo file</a> -->
                  <a class="button" href="#">Adopt</a>
                 </div>
                     </div>
                 </div>
-                <div class="product_grid column_2">
-                    <div class="product_img_2">
+
+                <div class="product_grid column_2" id="staffyboi" data-personality="extrovert" data-size="small" data-activity="gym">
+                    <div class="product_img_5">
                     </div>
                     <div class="product_details">
-                        <h1 class="title editable">Dog 2</h1>
+                        <h1 class="title editable">Staffy Boi</h1>
                         
                   <span class="product_desc editable">
-                  <p>Number1</p>
+                  <p>Who could resist such pearls? Look at them, and look at how happy that tiny boi looks!</p>
                   </span>
                   <div class="action">
-                 <a class="button" href="#">View doggo file</a>
+                 <!-- <a class="button" href="#">View doggo file</a> -->
                  <a class="button" href="#">Adopt</a>
                 </div>
                     </div>
                 </div>
-                <div class="product_grid column_2">
-                    <div class="product_img_3">
+
+                <div class="product_grid column_2" id="pinkyandthebrain" data-personality="extrovert" data-size="medium" data-activity="couchpotato">
+                    <div class="product_img_6">
                     </div>
                     <div class="product_details">
-                        <h1 class="title editable">Dog 3</h1>
+                        <h1 class="title editable">Pinky and the Brain</h1>
                         
                   <span class="product_desc editable">
-                  <p>Number2
+                  <p>Ever seen Pinky and the Brain? Well these two come in pair, we'll let you figure out which one is which...</p>
+                  </span>
+                  <div class="action">
+                 <!-- <a class="button" href="#">View doggo file</a> -->
+                 <a class="button" href="#">Adopt</a>
+                </div>
+                    </div>
+                </div>
+
+                <div class="product_grid column_2" id="coughingboi" data-personality="bitofboth" data-size="small" data-activity="regular">
+                    <div class="product_img_7">
+                    </div>
+                    <div class="product_details">
+                        <h1 class="title editable">Couching Chihuahua</h1>
+                        
+                  <span class="product_desc editable">
+                  <p>A sweet doggo that unfortunately has asthma. Might need to wear earplugs at night!</p>
+                  </span>
+                  <div class="action">
+                 <!-- <a class="button" href="#">View doggo file</a> -->
+                 <a class="button" href="#">Adopt</a>
+                </div>
+                    </div>
+                </div>
+
+                <div class="product_grid column_2" id="smirkingboi" data-personality="extrovert" data-size="small" data-activity="gym">
+                    <div class="product_img_8">
+                    </div>
+                    <div class="product_details">
+                        <h1 class="title editable">Smirking Boi</h1>
+                        
+                  <span class="product_desc editable">
+                  <p>Ready for some romance masterclass? With this dog you get more than a pet, you get a love guru.</p>
+                  </span>
+                  <div class="action">
+                 <!-- <a class="button" href="#">View doggo file</a> -->
+                 <a class="button" href="#">Adopt</a>
+                </div>
+                    </div>
+                </div>
+
+                <div class="product_grid column_2" id="lookinggood" data-personality="introvert" data-size="medium" data-activity="regular">
+                    <div class="product_img_9">
+                    </div>
+                    <div class="product_details">
+                        <h1 class="title editable">Looking Good Doggo</h1>
+                        
+                  <span class="product_desc editable">
+                  <p>This doggo might not be the most photogenic ever, but good lord does it try his very best.</p>
+                  </span>
+                  <div class="action">
+                 <!-- <a class="button" href="#">View doggo file</a> -->
+                 <a class="button" href="#">Adopt</a>
+                </div>
+                    </div>
+                </div>
+
+                <div class="product_grid column_2" id="thoughtfuldane" data-personality="bitofboth" data-size="big" data-activity="gym">
+                    <div class="product_img_10">
+                    </div>
+                    <div class="product_details">
+                        <h1 class="title editable">Thoughtful Dane</h1>
+                        
+                  <span class="product_desc editable">
+                  <p>You will never get a dog that would stop playing ball just to give you all the attention you need.</p>
+                  </span>
+                  <div class="action">
+                 <!-- <a class="button" href="#">View doggo file</a> -->
+                 <a class="button" href="#">Adopt</a>
+                </div>
+                    </div>
+                </div>
+
+                <div class="product_grid column_2" id="birthdaydog" data-personality="introvert" data-size="medium" data-activity="regular">
+                    <div class="product_img_11">
+                    </div>
+                    <div class="product_details">
+                        <h1 class="title editable">Birthday Dog</h1>
+                        
+                  <span class="product_desc editable">
+                  <p>So you're into celebrating dog birthdays? Trust us, this one will enjoy every single second of it every year. Or every day, if that's something you like to do.</p>
+                  </span>
+                  <div class="action">
+                 <!-- <a class="button" href="#">View doggo file</a> -->
+                 <a class="button" href="#">Adopt</a>
+                </div>
+                    </div>
+                </div>
                 
-                  </p>
-                  </span>
-                  <div class="action">
-                 <a class="button" href="#">View doggo file</a>
-                 <a class="button" href="#">Adopt</a>
-                </div>
-                    </div>
-                </div>
-                <div class="product_grid column_2">
-                    <div class="product_img_2">
+                <div class="product_grid column_2" id="lazybernard" data-personality="introvert" data-size="big" data-activity="couchpotato">
+                    <div class="product_img_12">
                     </div>
                     <div class="product_details">
-                        <h1 class="title editable">Dog 2</h1>
+                        <h1 class="title editable">Lazy Bernard</h1>
                         
                   <span class="product_desc editable">
-                  <p>Number1</p>
+                  <p>Not that talkative? Hate any kind of physical activity? We have the perfect dog for you. All he wants is a comfy couch.</p>
                   </span>
                   <div class="action">
-                 <a class="button" href="#">View doggo file</a>
+                 <!-- <a class="button" href="#">View doggo file</a> -->
                  <a class="button" href="#">Adopt</a>
                 </div>
                     </div>
                 </div>
-                <div class="product_grid column_2">
-                    <div class="product_img_3">
+
+                <div class="product_grid column_2" id="adopteddog" data-personality="bitofboth" data-size="big" data-activity="gym">
+                    <div class="product_img_13">
                     </div>
                     <div class="product_details">
-                        <h1 class="title editable">Dog 3</h1>
+                        <h1 class="title editable">Adopted Dog</h1>
                         
                   <span class="product_desc editable">
-                  <p>Number2
-                
-                  </p>
+                  <p>You might need to be patient for that one. If this doggo learns that he was adopted, he might feel bamboozled.</p>
                   </span>
                   <div class="action">
                  <a class="button" href="#">View doggo file</a>
@@ -199,41 +297,10 @@
                 </div>
                     </div>
                 </div>
-                <div class="product_grid column_2">
-                    <div class="product_img_2">
-                    </div>
-                    <div class="product_details">
-                        <h1 class="title editable">Dog 2</h1>
-                        
-                  <span class="product_desc editable">
-                  <p>Number1</p>
-                  </span>
-                  <div class="action">
-                 <a class="button" href="#">View doggo file</a>
-                 <a class="button" href="#">Adopt</a>
-                </div>
-                    </div>
-                </div>
-                <div class="product_grid column_2">
-                    <div class="product_img_3">
-                    </div>
-                    <div class="product_details">
-                        <h1 class="title editable">Dog 3</h1>
-                        
-                  <span class="product_desc editable">
-                  <p>Number2
-                
-                  </p>
-                  </span>
-                  <div class="action">
-                 <a class="button" href="#">View doggo file</a>
-                 <a class="button" href="#">Adopt</a>
-                </div>
-                    </div>
-                </div>
-                      
-                <a class="backbutton" href="questions.html">Back to questionnaire</a>
+                           
     </div>
+
+<!-- <a href="questions.html">Back to questionnaire</a> -->
 
     <script src="index.js"></script>
 </body>

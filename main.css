@@ -86,43 +86,8 @@ body {
       margin-bottom: 20px;
   }
 
-
-    /* Flexbox from Adoption */
-    .parent {
-      height: 500px;
-      display: flex;
-      flex-direction: row;
-     background-color: hotpink;
-      justify-content: space-evenly;
-      align-content: center;
-  }
- 
-  
-  .child {
-      width: 100px;
-      height: 100px;
-      /* background-color: aquamarine; */
-      padding-right: 1rem;
-      display: none;
-  }
-
-    .div1  {
-      background-color: red;
-        
-  }
-
-    .div2  {
-      background-color: lightblue;
-  }
-
-    .div3  {
-      background-color: greenyellow;
-      padding-right: 0;
-  }
-
-    img {
-      width: 100px;
-      height: 100px;
+    p {
+      font-weight: bold;
   }
 
   *{
@@ -148,7 +113,7 @@ body {
       display:block;
       margin:20px auto;
       min-width:300px;
-      display: none;
+      display: block;
     }
     .product_grid{
       display:block;
@@ -160,12 +125,85 @@ body {
       background:#fff;
       position:relative;
     }
-    .product_img{
+    .product_img_1{
       width:100%;
       height:320px;
-      background:url('img/Doge.jpg')0% 40%;
+      background:url('img/BroccoliDog.jpg')0% 40%;
       background-size:cover;
     }
+    .product_img_2{
+      width:100%;
+      height:320px;
+      background:url('img/CUPCAKEDOG.jpg');
+      background-size:cover;
+    }
+    .product_img_3{
+      width:100%;
+      height:320px;
+      background:url('img/Doge.jpg');
+      background-size:cover;
+    }
+    .product_img_4{
+      width:100%;
+      height:320px;
+      background:url('img/MoonMoon.png')0% 40%;
+      background-size:cover;
+    }
+    .product_img_5{
+      width:100%;
+      height:320px;
+      background:url('img/StaffyBoi.png')0% 40%;
+      background-size:cover;
+    }
+    .product_img_6{
+      width:100%;
+      height:320px;
+      background:url('img/PinkyntheBrain.png')0% 40%;
+      background-size:cover;
+    }
+    .product_img_7{
+      width:100%;
+      height:320px;
+      background:url('img/CoughingChihuaha.jpg')0% 40%;
+      background-size:cover;
+    }
+    .product_img_8{
+      width:100%;
+      height:320px;
+      background:url('img/SmirkingChihuahua.jpg')0% 40%;
+      background-size:cover;
+    }
+    .product_img_9{
+      width:100%;
+      height:320px;
+      background:url('img/LookingGoodSpringer.jpg')0% 40%;
+      background-size:cover;
+    }
+    .product_img_10{
+      width:100%;
+      height:320px;
+      background:url('img/ThoughtfulDane.jpg')0% 40%;
+      background-size:cover;
+    }
+    .product_img_11{
+      width:100%;
+      height:320px;
+      background:url('img/BirthdayDog.jpg')0% 40%;
+      background-size:cover;
+    }
+    .product_img_12{
+      width:100%;
+      height:320px;
+      background:url('img/LazyBernard.jpg')0% 40%;
+      background-size:cover;
+    }
+    .product_img_13{
+      width:100%;
+      height:320px;
+      background:url('img/AdoptedDog.jpg')0% 40%;
+      background-size:cover;
+    }
+
     .product_details{
       transition:all .9s linear;
       background:rgba(0,0,0,0.3);
@@ -221,12 +259,7 @@ body {
   .column_2 .action{
     width:44%;
   }
-  .product_img_2{
-      width:100%;
-      height:320px;
-      background:url('img/BirthdayDog.jpg')0% 40%;
-      background-size:cover;
-    }
+
   .column_3{
     width:33.3333333%;
     float:left;
@@ -268,12 +301,7 @@ body {
     margin:5px 0 0 0;
   }
   
-  .product_img_3{
-      width:100%;
-      height:320px;
-      background:url('img/LookingGoodSpringer.jpg')0% 40%;
-      background-size:cover;
-    }
+  
 
   @media (max-width:900px){
     .column_6{

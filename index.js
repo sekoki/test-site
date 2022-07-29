@@ -12,10 +12,10 @@ function myFunction(showStuff) {
     
     document.getElementById('form').style.display ='none';
     
+    
     let dogs = document.querySelectorAll('.product_grid');
     dogs.forEach(e => {e.style.display ='none'});
     
-    // if (persona.value != "bitofboth") {
         let divPersona = document.querySelectorAll("[data-personality='" + persona.value + "']");
         console.log("[data-personality='" + persona.value + "']");
         divPersona.forEach(divP => {
@@ -33,7 +33,7 @@ function myFunction(showStuff) {
         divActivity.forEach(divA => {
         divA.style.display = 'block';
         })
-    // }
+
     
             
 }
